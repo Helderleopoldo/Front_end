@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Plano</title>
+   <style>
+    body {
+        background-color: #0c1014;
+        color: white;
+        width: 90%;   
+        max-width: 960px;
+        margin: 0 auto ;
+        margin-bottom: 32px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+    }
+    .escolha {
+        text-transform: uppercase;
+        font-size: 62px;
+        text-align: center;
+        margin: 46px 0;
+    }
+     .header {
+        display:flex;
+        background-color: #05080a;
+        padding: 16px;
+        justify-content:space-between;
+        align-items: center;
+     }
+     
+     .header__logo {
+        font-size: 36px;
+        text-transform: uppercase;
+        margin-left: 16px;  
+        letter-spacing: 2px;  
+     }
+     
+     .header__barranave ul {
+        display: flex;
+        gap: 16px;
+        list-style-type: none;
+        font-size: 18px;    
+    }
+    .header__barranave a {
+        color: white;
+        text-decoration: none;
+        padding: 14px;
+        border-radius: 6px;
+        }
+    
+    a.header__plano {
+        background-color: #cbe300;
+        color: #0c1014;
+        pointer-events: none;
+        
+    }
+    
+    .price{
+        display: flex;
+        gap: 16px;
+    }
+    
+    .header__barranave a:hover{
+        text-decoration: underline;
+    }
+    
+    .price__plan{
+        background-color: #1f262c;  
+        flex: 1;
+        padding: 30px;
+        border-radius: 6px;
+        box-shadow: 0 2px 15px -6px black;  
+        display: flex;    
+        flex-direction: column;
+    }
+    
+    .price-title{
+        border-bottom: 2px solid #cbe300;
+        text-transform: uppercase;
+        margin-top: 0;
+        padding-bottom: 10px;
+        letter-spacing: 2px;
+    }
+    
+    .lista-plan1{
+        margin:0 0 35px;
+        color: #b5b5b5;
+        padding-left: 16px;
+        line-height: 1.8;
+        flex-grow: 1;
+    }
+    
+    .lista-plan1 li::marker{
+        color:#cbe300
+    }
+    
+    .price-plan p {
+        margin-top:0 ;
+    }
+    
+    a.assine{
+        text-decoration: none;
+        background-color: #cbe300;
+        color: #0c1014;
+        border-radius: 6px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: bold; 
+        padding: 16px 10px;   
+        text-align: center;
+        
+    }
+    .assine:hover{
+        background-color: #1f262c;
+        outline: 2px solid #cbe300;
+        color: white;
+        
+    }
+   </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__logo">myserver</div>
+        <nav class="header__barranave">            
+            <div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="header__plano">Plano</a>
+                    </li>
+                    <li><a href="#">Suporte</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="escolha">escolha seu plano</h1>
+
+    <section class="price">
+        <div class="price__plan">
+            <h2 class="price-title">Essencial</h2>
+            <p> <span class="price-plan"> R$ 3,95
+                </span>/mês</p>
+            <ul class="lista-plan1">
+                <li>1 Website</li>
+                <li>1GB de armazenamento</li>
+                <li>10GB de transferência</li>
+            </ul>
+            <a href="#" class="assine">Assine já</a>
+
+        </div>
+
+        <div class="price__plan">
+            <h2 class="price-title">Premiun</h2>
+            <p> <span class="price-plan1"> R$ 7,95
+                </span>/mês</p>
+            <ul class="lista-plan1">
+                <li>3 Website</li>
+                <li>3GB de armazenamento</li>
+                <li>Transferência ilimitada</li>
+                <li>10 horas de suporte mensais</li>
+            </ul>
+            <a href="#" class="assine">Assine já</a>
+
+        </div>
+        <div class="price__plan">
+            <h2 class="price-title">Gold</h2>
+            <p> <span class="price-plan1"> R$ 13,95
+                </span>/mês</p>
+            <ul class="lista-plan1">
+                <li>5 Website</li>
+                <li>30GB de armazenamento</li>
+                <li>Transferência ilimitada</li>
+                <li>30 horas de suporte mensais</li>
+                <li>Email personalizado</li>
+            </ul>
+            <a href="#" class="assine">Assine já</a>
+
+        </div>
+
+    </section>
+
+
+
+</body>
+
+</html>
